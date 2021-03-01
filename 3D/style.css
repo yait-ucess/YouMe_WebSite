@@ -24,10 +24,14 @@
   z-index: 1;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  -webkit-perspective-origin: 50% 50%;
-          perspective-origin: 50% 50%;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+.btn.cover-3d span {
+  display: inline-block;
+  -webkit-transform: translate3d(0, 0, 20px);
+          transform: translate3d(0, 0, 20px);
 }
 
 .btn.cover-3d::before {
@@ -45,7 +49,6 @@
   transition: all 0.3s;
   -webkit-transform-origin: top center;
           transform-origin: top center;
-  z-index: -1;
   opacity: 0;
 }
 
