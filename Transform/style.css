@@ -3,9 +3,7 @@
   height: 100px;
   margin: 0 auto;
   background-color: orangered;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-  -webkit-transform-origin: center, center;
-          transform-origin: center, center;
+  -webkit-transform: skew(30deg);
+          transform: skew(30deg);
 }
 /*# sourceMappingURL=style.css.map */
