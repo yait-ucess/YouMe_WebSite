@@ -24,7 +24,8 @@ $cBlack: black;
     position: relative;
     z-index: 1;
     transform-style: preserve-3d;
-    perspective: 300px;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
 
     &::before {
       content: '';
