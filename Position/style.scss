@@ -1,7 +1,8 @@
 #container {
   padding: 1rem;
   background-color: gray;
-  position:relative
+  position:relative;
+  height: 2000px;
 }
 
 div {
@@ -15,7 +16,7 @@ div {
 
 .div-1 {
   background: orange;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
@@ -27,7 +28,10 @@ div {
 }
 .div-3 {
   background: teal;
-  display: none;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 50;
 }
 .div-4 {
   width: 80px;
