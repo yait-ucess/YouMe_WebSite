@@ -1,6 +1,7 @@
 #container {
   padding: 1rem;
   background-color: gray;
+  position: relative;
 }
 
 div {
@@ -18,11 +19,13 @@ div {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 .div-2 {
   background: tomato;
-  display: none;
+  position: relative;
+  z-index: 20;
 }
 
 .div-3 {
