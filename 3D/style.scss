@@ -22,7 +22,6 @@ $cBlack: black;
 
   &.cover-3d {
     position: relative;
-    overflow: hidden;
     z-index: 1;
     transform-style: preserve-3d;
     perspective: 300px;
@@ -36,9 +35,11 @@ $cBlack: black;
       position: absolute;
       top: 0;
       left: 0;
-      transform: translateX(-100%);
-      transition: transform 0.3s;
+      transform: rotateX(90deg);
+      transition: all 0.3s;
+      transform-origin: top center;
       z-index: -1;
+      opacity: 0;
     }
 
 
@@ -47,6 +48,7 @@ $cBlack: black;
 
       &::before {
         transform: none;
+        opacity: 1;
       }
     }
   }
