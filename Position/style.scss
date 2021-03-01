@@ -32,9 +32,13 @@ div {
   top: 40px;
   left: 40px;
   z-index: 50;
+  height: 500px;
 }
 .div-4 {
   width: 80px;
   height: 80px;
   background-color: violet;
+  position: sticky;
+  top: 30px;
+
 }
