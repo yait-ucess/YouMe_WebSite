@@ -23,6 +23,8 @@
 }
 
 .child.v2 {
+  width: 200px;
+  height: 200px;
   background-color: palevioletred;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
@@ -40,17 +42,19 @@
  * 横方向のレイアウト
  */
 /* インライン要素に対して */
-.parent {
-  text-align: right;
-  letter-spacing: 6px;
-}
-
-.child {
-  display: inline-block;
-}
-
 /* ブロック要素を中央揃え */
 /**
  * 上下方向のレイアウト
  */
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 /*# sourceMappingURL=style.css.map */

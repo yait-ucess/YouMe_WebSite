@@ -16,6 +16,8 @@
   flex-shrink: 0;
 }
 .child.v2 {
+  width: 200px;
+  height: 200px;
   background-color: palevioletred;
   flex-grow: 2;
 }
@@ -28,13 +30,13 @@
  * 横方向のレイアウト
  */
 /* インライン要素に対して */
- .parent {
-    text-align: right;
-    letter-spacing: 6px;
- }
- .child {
-    display: inline-block;
- }
+// .parent {
+//   text-align: right;
+//   letter-spacing: -6px;
+// }
+// .child {
+//     display: inline-block;
+// }
 
 /* ブロック要素を中央揃え */
 // .parent {
@@ -46,15 +48,15 @@
 /**
  * 上下方向のレイアウト
  */
-// .parent {
-//   position: relative;
-// }
-// .child {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// }
+ .parent {
+   position: relative;
+ }
+ .child {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
 
 // .parent {
 //   display: flex;
