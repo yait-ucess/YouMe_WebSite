@@ -23,8 +23,6 @@
 }
 
 .child.v2 {
-  width: 200px;
-  height: 200px;
   background-color: palevioletred;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
@@ -47,14 +45,18 @@
  * 上下方向のレイアウト
  */
 .parent {
-  position: relative;
-}
-
-.child {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
