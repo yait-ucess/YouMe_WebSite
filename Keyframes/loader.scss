@@ -22,16 +22,12 @@ body {
 }
 
 @keyframes sk-bouncedelay {
-  0% {
+  from {
     transform: scale(0);
     background-color: $cBlack;
   }
 
-  50% {
-    transform: scale(2);
-  }
-
-  100% {
+  to {
     transform: scale(1);
     background-color: orange;
   }
