@@ -11,9 +11,6 @@ body {
           animation: sk-bouncedelay 1.4s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
 }
 
 .paused {
@@ -22,24 +19,36 @@ body {
 }
 
 @-webkit-keyframes sk-bouncedelay {
-  from {
+  0% {
     -webkit-transform: scale(0);
             transform: scale(0);
+    background-color: black;
   }
-  to {
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    background-color: orange;
   }
 }
 
 @keyframes sk-bouncedelay {
-  from {
+  0% {
     -webkit-transform: scale(0);
             transform: scale(0);
+    background-color: black;
   }
-  to {
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    background-color: orange;
   }
 }
 /*# sourceMappingURL=loader.css.map */
