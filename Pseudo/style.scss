@@ -17,3 +17,13 @@ a {
     color: purple;
   } 
 }
+
+div {
+  & span {
+    color: olive;
+
+    &:nth-child(even) {
+      color: orchid;
+    }
+  }
+}

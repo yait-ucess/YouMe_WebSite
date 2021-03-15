@@ -17,4 +17,12 @@ a:focus {
 a:active {
   color: purple;
 }
+
+div span {
+  color: olive;
+}
+
+div span:nth-child(even) {
+  color: orchid;
+}
 /*# sourceMappingURL=style.css.map */
