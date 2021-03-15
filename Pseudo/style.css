@@ -22,15 +22,11 @@ div span {
   color: olive;
 }
 
-div span:nth-of-type(1) {
+div span:not(.cls) {
   color: orchid;
 }
 
-div span:nth-of-type(2) {
-  color: blue;
-}
-
-div span:nth-of-type(3) {
-  color: orange;
+div span:first-of-type {
+  color: orchid;
 }
 /*# sourceMappingURL=style.css.map */
