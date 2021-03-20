@@ -3,6 +3,7 @@ $cWhite: white;
 .hamburger {
   background-color: transparent;
   border: none;
+  outline: none !important;
 
   & > span {
     background-color: $cBlack;
