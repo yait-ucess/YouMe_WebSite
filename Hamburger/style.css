@@ -2,6 +2,7 @@
   background-color: transparent;
   border: none;
   outline: none !important;
+  cursor: pointer;
 }
 
 .hamburger > span {
