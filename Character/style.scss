@@ -1,5 +1,9 @@
 @import 'mixin';
 
+html {
+  font-family: 'Syne Mono', monospace;
+}
+
 body {
   margin: 0;
 }
@@ -17,6 +21,7 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   opacity: 0;
+  font-size: 2em;
 
   &.inview {
     opacity: 1;
