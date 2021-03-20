@@ -5,6 +5,7 @@ img {
 
 .cover-slide {
   position: relative;
+  overflow: hidden;
 }
 
 .cover-slide::after {
