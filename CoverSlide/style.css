@@ -110,6 +110,8 @@ img {
   }
   50.1% {
     opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   100% {
     opacity: 1;
@@ -125,6 +127,8 @@ img {
   }
   50.1% {
     opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   100% {
     opacity: 1;
