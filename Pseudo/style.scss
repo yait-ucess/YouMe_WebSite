@@ -1,0 +1,33 @@
+a {
+  color: orange;
+
+  &:visited {
+    color: blue;
+  }
+
+  &:hover {
+    color: red;
+  }
+
+  &:focus {
+    color: green;
+  }
+
+  &:active {
+    color: purple;
+  } 
+}
+
+div {
+  & span {
+    color: olive;
+
+    &:not(.cls) {
+      color: orchid;
+    }
+
+    &:first-of-type {
+      color: orchid;
+    }
+  }
+}
