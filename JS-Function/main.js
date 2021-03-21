@@ -1,6 +1,5 @@
-function hello() {
-  
+function hello(name) {
+  //let name = 'Shun';
+  console.log('hello' + name);
 }
 
-let name = 'Shun';
-console.log('hello' + name);
