@@ -1,2 +1,2 @@
 let hello = 'hello world';
-console.log(hello.substring(1));
+console.log(hello.split(' '));
