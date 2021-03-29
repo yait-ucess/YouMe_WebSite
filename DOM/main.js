@@ -1,13 +1,10 @@
-const btn = document.querySelector('#btn');
-const h1 = document.querySelector('h1');
+const dcl = document.querySelector('.dcl');
+const load = document.querySelector('.load');
 
-function changeColor() {
-  h1.style.color = 'green';
-};
+document.addEventListener("DOMContentLoaded", function () {
+    dcl.classList.add('done');
+});
 
-function changeBgColor() {
-  h1.style.backgroundColor = 'yellow';
-};
-
-btn.addEventListener('click', changeColor);
-btn.addEventListener('click', changeBgColor);
+window.addEventListener("load", function () {
+    load.classList.add('done');
+});
