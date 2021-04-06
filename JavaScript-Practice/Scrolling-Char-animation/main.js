@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const ta = new TextAnimation('.animate-title');
+    const ta = new TweenTextAnimation('.tween-animate-title');
     ta.animate();
 });
 
-// text-animation.jsに以下のコードをカット＆ペースト
-// してファイル分割をしましょう。
+
 class TextAnimation {
     constructor(el) {
         this.DOM = {};
