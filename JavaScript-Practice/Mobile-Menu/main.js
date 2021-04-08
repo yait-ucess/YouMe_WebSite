@@ -3,8 +3,12 @@ class MobileMenu {
     this.DOM = {};
     this.DOM.btn = document.querySelector('.mobile-menu__btn');
     this.DOM.container = document.querySelector('#global-container');
-    this.eventType = window.ontouchstart ? 'touchstart' : 'click';
+    this.eventType = this._getEventType();
     this._addEvent();
+  }
+
+  _getEventType() {
+    return window.ontouchstart ? 'touchstart' : 'click';
   }
 
   _toggle() {
