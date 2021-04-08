@@ -23,6 +23,11 @@ body {
   margin: 0;
 }
 
+.menu-open #container {
+  -webkit-transform: translate(-300px, 60px);
+          transform: translate(-300px, 60px);
+}
+
 .mobile-menu {
   position: fixed;
   right: 0;

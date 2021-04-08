@@ -20,6 +20,12 @@ body {
     margin: 0;
 }
 
+.menu-open {
+    & #container {
+        transform: translate(-300px, 60px);
+    }
+}
+
 .mobile-menu {
     position: fixed;
     right: 0;
