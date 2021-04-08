@@ -41,6 +41,9 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  cursor: pointer;
 }
 
 .mobile-menu__main {
@@ -110,6 +113,11 @@ body {
           transform: translate(-300px, 60px);
   -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
           box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+}
+
+.menu-open .mobile-menu__cover {
+  opacity: 1;
+  visibility: visible;
 }
 
 .menu-open .mobile-menu__item {

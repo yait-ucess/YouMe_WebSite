@@ -39,6 +39,8 @@ body {
         background-color: rgba(0, 0, 0, 0.3);
         opacity: 0;
         visibility: hidden;
+        transition: opacity 1s;
+        cursor: pointer;
     }
 
     &__main {
@@ -102,6 +104,11 @@ body {
     }
 
     & .mobile-menu {
+        &__cover {
+            opacity: 1;
+            visibility: visible;
+        }
+
         &__item {
             transform: none;
             opacity: 1;
