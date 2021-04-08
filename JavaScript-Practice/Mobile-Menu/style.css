@@ -3,6 +3,8 @@
   background-color: teal;
   height: 100vh;
   z-index: 2;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .header {
