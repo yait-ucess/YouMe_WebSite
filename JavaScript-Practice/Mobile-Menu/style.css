@@ -1,3 +1,27 @@
+#container {
+  position: relative;
+  background-color: teal;
+  height: 100vh;
+}
+
+.header {
+  background-color: white;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  margin: 0;
+}
+
 .mobile-menu__btn {
   background-color: unset;
   border: none;
