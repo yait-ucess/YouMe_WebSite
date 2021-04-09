@@ -1,6 +1,7 @@
 @import 'mixin';
 
 $cSubTitle: #535353;
+$cWineRed: #904669;
 
 #global-container {
   transition: opacity 1s;
@@ -12,27 +13,6 @@ $cSubTitle: #535353;
 }
 
 .pace {
-  -webkit-pointer-events: none;
-  pointer-events: none;
- 
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
- 
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
- 
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
- 
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
- 
   z-index: 2000;
   position: fixed;
   margin: auto;
@@ -40,8 +20,8 @@ $cSubTitle: #535353;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 200px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
  
 .pace .pace-progress {
@@ -65,7 +45,7 @@ $cSubTitle: #535353;
 .pace-progress-inner {
   width: 40px;
   height: 40px;
-  background-color: #333;
+  background-color: $cWineRed;
 
   margin: 0px auto;
   @include animation(
