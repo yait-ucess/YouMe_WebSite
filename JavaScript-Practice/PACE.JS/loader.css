@@ -1,11 +1,11 @@
 .pace-done #global-container {
+  visibility: visible;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
-  opacity: 1;
 }
 
 #global-container {
-  opacity: 0;
+  visibility: hidden;
 }
 
 .pace {

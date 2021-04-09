@@ -1,10 +1,10 @@
 .pace-done #global-container {
+  visibility: visible;
   transition: opacity 1s;
-  opacity: 1;
 }
 
 #global-container {
-  opacity: 0;
+  visibility: hidden;
 }
 
 .pace {
