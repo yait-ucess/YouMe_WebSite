@@ -1,9 +1,13 @@
-.pace-done #global-container {
-  visibility: visible;
+@import 'mixin';
+
+$cSubTitle: #535353;
+
+#global-container {
   transition: opacity 1s;
 }
 
-#global-container {
+.pace-running #global-container {
+  opacity: 0;
   visibility: hidden;
 }
 
@@ -32,72 +36,54 @@
   z-index: 2000;
   position: fixed;
   margin: auto;
-  top: 12px;
+  top: 0px;
   left: 0;
   right: 0;
   bottom: 0;
   width: 200px;
   height: 50px;
-  overflow: hidden;
 }
  
 .pace .pace-progress {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
- 
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
- 
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
- 
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
- 
-  display: block;
-  position: absolute;
-  right: 100%;
-  margin-right: -7px;
-  width: 93%;
-  top: 7px;
-  height: 14px;
-  font-size: 12px;
-  background: #29d;
-  color: #29d;
-  line-height: 60px;
-  font-weight: bold;
-  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
- 
-  -webkit-box-shadow: 120px 0 #fff, 240px 0 #fff;
-  -ms-box-shadow: 120px 0 #fff, 240px 0 #fff;
-  box-shadow: 120px 0 #fff, 240px 0 #fff;
+  transform: none !important;
+  text-align: center;
 }
  
 .pace .pace-progress:after {
   content: attr(data-progress-text);
-  display: inline-block;
-  position: fixed;
-  width: 45px;
-  text-align: right;
-  right: 0;
-  padding-right: 16px;
-  top: 4px;
+  display: block;
+  font-weight: 100;
+  font-size: 2em;
+  font-family: 'Helvetica Neue', 'Yu Gothic', 'Meiryo', sans-serif;
+  color: $cSubTitle;
 } 
- 
-.pace .pace-activity {
-  position: absolute;
-  width: 100%;
-  height: 28px;
-  z-index: 2001;
-  box-shadow: inset 0 0 0 2px #29d, inset 0 0 0 7px #FFF;
-  border-radius: 10px;
-}
  
 .pace.pace-inactive {
   display: none;
+}
+
+.pace-progress-inner {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+
+  margin: 0px auto;
+  @include animation(
+    $name: sk-rotateplane,
+    $duration: 1.2s,
+    $iteration-count: infinite,
+    $timing-function: ease-in-out
+  );
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+  }
 }
