@@ -1,8 +1,8 @@
 const swiper = new Swiper('.swiper-container', {
   // Optional parameters
-  direction: 'vertical',
+  //direction: 'vertical',
   loop: true,
-  //effect: 'fade',
+  effect: 'fade',
 
   // If we need pagination
   pagination: {
