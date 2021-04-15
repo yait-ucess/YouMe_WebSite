@@ -17,6 +17,9 @@ class HeroSlider {
         1024: {
           slidesPerView: 2
         }
+      },
+      autoplay: {
+        deray: 4000
       }
     })
   }
