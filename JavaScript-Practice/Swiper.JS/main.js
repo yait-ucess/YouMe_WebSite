@@ -12,7 +12,12 @@ class HeroSlider {
       effect: 'coverflow',
       centerSlides: true,
       slidesPerView: 1,
-      speed: 1000
+      speed: 1000,
+      breakpoints: {
+        1024: {
+          slidesPerView: 2
+        }
+      }
     })
   }
 }
