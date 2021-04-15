@@ -11,6 +11,8 @@ class HeroSlider {
       //effect: 'fade',
       effect: 'coverflow',
       centerSlides: true,
+      slidesPerView: 1,
+      
     })
   }
 }
