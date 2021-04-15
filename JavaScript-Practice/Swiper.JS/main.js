@@ -9,6 +9,7 @@ class HeroSlider {
       //direction: 'vertical',
       loop: true,
       //effect: 'fade',
+      grabCursor: true,
       effect: 'coverflow',
       centerSlides: true,
       slidesPerView: 1,
