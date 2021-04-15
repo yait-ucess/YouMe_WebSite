@@ -12,7 +12,7 @@ class HeroSlider {
       effect: 'coverflow',
       centerSlides: true,
       slidesPerView: 1,
-      
+      speed: 1000
     })
   }
 }
