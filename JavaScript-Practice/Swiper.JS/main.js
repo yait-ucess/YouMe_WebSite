@@ -19,7 +19,8 @@ class HeroSlider {
         }
       },
       autoplay: {
-        deray: 4000
+        deray: 4000,
+        disableOnInteraction: false
       }
     })
   }
