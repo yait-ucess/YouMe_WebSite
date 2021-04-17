@@ -16,4 +16,7 @@
   @import 'breakpoints/1280up';
 }
 
-@media (min-resolution: 192dpi)
+@media (min-resolution: 192dpi),
+      (-webkit-min-device-pixel-ratio: 2) {
+        
+      }
