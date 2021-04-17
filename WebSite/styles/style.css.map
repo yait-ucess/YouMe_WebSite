@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": ";ACAA;;;;mEAImE;ADFnE,MAAM,EAAE,SAAS,EAAE,KAAK;EEFxB;;;;mEAImE;;;AFEnE,MAAM,EAAE,SAAS,EAAE,KAAK;EGNxB;;;;mEAImE;;;AHMnE,MAAM,EAAE,SAAS,EAAE,KAAK;EIVxB;;;;mEAImE;;;AJUnE,MAAM,EAAE,SAAS,EAAE,MAAM;EKdzB;;;;mEAImE;;;ALcnE,MAAM,EAAE,cAAc,EAAE,MAAM,KAAK,6BAA6B,EAAE,CAAC;EMlBnE;;;;mEAImE;EAEnE;;;;;;;;EAQE;;;ANSF,MAAM,CAAC,KAAK;EOvBZ;;;;mEAImE",
+    "mappings": ";AAAA,MAAM,CAAN,0BAAM;AAIN,MAAM,EAAE,SAAS,EAAE,KAAK;ECJxB;;;;mEAImE;;;ADInE,MAAM,EAAE,SAAS,EAAE,KAAK;EERxB;;;;mEAImE;;;AFQnE,MAAM,EAAE,SAAS,EAAE,KAAK;EGZxB;;;;mEAImE;;;AHYnE,MAAM,EAAE,SAAS,EAAE,MAAM;EIhBzB;;;;mEAImE;;;AJgBnE,MAAM,EAAE,cAAc,EAAE,MAAM,KAAK,6BAA6B,EAAE,CAAC;EKpBnE;;;;mEAImE;EAEnE;;;;;;;;EAQE;;;ALWF,MAAM,CAAC,KAAK;EMzBZ;;;;mEAImE",
     "sources": [
         "style.scss",
-        "breakpoints/_base.scss",
         "breakpoints/_480up.scss",
         "breakpoints/_600up.scss",
         "breakpoints/_960up.scss",
