@@ -238,6 +238,10 @@
           transform: translate(-50%, -50%);
 }
 
+.hero {
+  overflow: hidden;
+}
+
 .hero__title {
   position: absolute;
   top: 50%;
@@ -539,7 +543,6 @@
 .cover-slide {
   position: relative;
   overflow: hidden;
-  margin-bottom: 80vh;
 }
 
 .cover-slide::after {
