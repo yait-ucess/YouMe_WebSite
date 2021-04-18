@@ -32,3 +32,9 @@ body {
 .pb-lg {
   padding-bottom: 80px !important;
 }
+
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
