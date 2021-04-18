@@ -56,6 +56,11 @@ img {
 .stores {
   @extend .content-width;
 
+  &__inner {
+    display: flex;
+    flex-direction: column
+  }
+
   &__title {
     @extend .font-lr;
     @extend .mb-sm;
