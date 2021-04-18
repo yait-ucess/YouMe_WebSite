@@ -151,6 +151,10 @@ body {
   font-size: 25px;
 }
 
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
