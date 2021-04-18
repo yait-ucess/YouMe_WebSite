@@ -804,7 +804,7 @@ img {
   color: #535353;
 }
 
-.stores__inner {
+.flex, .stores__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -816,6 +816,8 @@ img {
 
 .stores__btn {
   text-align: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 @media (min-width: 480px) {
@@ -832,11 +834,18 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-  .stores__inner {
+  .flex, .stores__inner {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .stores__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 60px;
   }
 }
 

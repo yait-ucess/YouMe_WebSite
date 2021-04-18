@@ -53,12 +53,17 @@ img {
   @extend .font-sm;
   color: $cSubTitle;
 }
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .stores {
   @extend .content-width;
 
   &__inner {
-    display: flex;
-    flex-direction: column
+    @extend .flex;
   }
 
   &__title {
@@ -68,5 +73,6 @@ img {
 
   &__btn {
     text-align: center;
+    flex-basis: 100%;
   }
 }
