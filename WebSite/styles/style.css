@@ -757,7 +757,7 @@ img {
   vertical-align: bottom;
 }
 
-.font-sm {
+.font-sm, .sub-title {
   font-size: 14px;
 }
 
@@ -765,15 +765,15 @@ img {
   font-size: 17px;
 }
 
-.font-lr {
+.font-lr, .stores__title {
   font-size: 17px;
 }
 
-.font-lg {
+.font-lg, .main-title {
   font-size: 25px;
 }
 
-.mb-sm {
+.mb-sm, .stores__title {
   margin-bottom: 16px !important;
 }
 
@@ -793,6 +793,19 @@ img {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
+}
+
+.main-title {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.sub-title {
+  color: #535353;
+}
+
+.stores__btn {
+  text-align: center;
 }
 
 @media (min-width: 480px) {
@@ -817,16 +830,16 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
-  .font-sm {
+  .font-sm, .sub-title {
     font-size: 16px;
   }
   .font-md {
     font-size: 19px;
   }
-  .font-lr {
+  .font-lr, .stores__title {
     font-size: 23px;
   }
-  .font-lg {
+  .font-lg, .main-title {
     font-size: 36px;
   }
   .mb-lg {
