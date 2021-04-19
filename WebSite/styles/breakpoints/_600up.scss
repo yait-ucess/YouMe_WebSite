@@ -11,8 +11,21 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 }
 
 .stores {
+  &__inner {
+    justify-content: space-between;
+  }
+
   &__item {
-    flex-basis: 50%;
-    margin-bottom: 60px;
+    flex-basis: 48.8%;
+  }
+}
+
+.support {
+  &__container {
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex-basis: 49%;
   }
 }

@@ -790,7 +790,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .stores {
+.content-width, .stores, .support__header, .support__container {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -830,6 +830,7 @@ img {
 .support__img {
   height: 150px;
   overflow: hidden;
+  margin-bottom: 5px;
 }
 
 .support__img > img {
@@ -863,10 +864,23 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .stores__inner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .stores__item {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    margin-bottom: 60px;
+    -ms-flex-preferred-size: 48.8%;
+        flex-basis: 48.8%;
+  }
+  .support__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .support__item {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
   }
 }
 
