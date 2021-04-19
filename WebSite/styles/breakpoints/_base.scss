@@ -76,3 +76,30 @@ img {
     flex-basis: 100%;
   }
 }
+
+.support {
+  &__container {
+    @extend .flex;   
+  }
+
+  &__title {
+    @extend .font-lr;
+    @extend .mb-sm;
+  }
+
+  &__btn {
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  &__img {
+    height: 150px;
+    overflow: hidden;
+
+    & > img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
