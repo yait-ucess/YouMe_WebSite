@@ -835,6 +835,8 @@ img {
 .support__img > img {
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
   height: 100%;
   width: 100%;
 }

@@ -98,6 +98,7 @@ img {
 
     & > img {
       object-fit: cover;
+      object-position: bottom;
       height: 100%;
       width: 100%;
     }
