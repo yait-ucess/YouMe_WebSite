@@ -27,6 +27,7 @@
   border-color: #dcdcdc;
   -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  outline: none;
 }
 
 .btn.filled:hover {
@@ -72,6 +73,7 @@
   overflow: hidden;
   z-index: 1;
   border-color: #dcdcdc;
+  outline: none;
 }
 
 .btn.slide-bg::before {
@@ -158,6 +160,7 @@
   margin: 0 auto;
   cursor: pointer;
   font-weight: 600;
+  outline: none;
 }
 
 .btn-cubic span {
