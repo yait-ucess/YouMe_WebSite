@@ -838,6 +838,10 @@ img {
   height: 100%;
 }
 
+.youme__texts-inner {
+  text-align: center;
+}
+
 .stores__btn {
   text-align: center;
   -ms-flex-preferred-size: 100%;
@@ -922,9 +926,21 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
   }
+  .youme__inner {
+    padding: 50px;
+  }
   .youme__texts, .youme__img {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
+  }
+  .youme__texts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 35px;
   }
 }
 
@@ -959,6 +975,15 @@ Stylesheet: 960px以上のモニタで適用
   .support__img {
     height: 335px;
   }
+  .youme__img {
+    height: 400px;
+  }
+  .youme__texts {
+    padding-left: 80px;
+  }
+  .youme__description {
+    margin-bottom: 40px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -967,6 +992,9 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+  .youme__inner {
+    padding: 50px 150px;
+  }
   .support__item {
     -ms-flex-preferred-size: 23%;
         flex-basis: 23%;

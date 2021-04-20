@@ -90,6 +90,10 @@ img {
   &__texts {
     @extend .pb-sm;
   }
+
+  &__texts-inner {
+    text-align: center;
+  }
 }
 
 .stores {
