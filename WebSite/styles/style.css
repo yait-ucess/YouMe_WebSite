@@ -774,7 +774,7 @@ img {
   font-size: 25px;
 }
 
-.mb-sm, .stores__title, .support__title {
+.mb-sm, .youme__sub, .youme__img, .stores__title, .support__title {
   margin-bottom: 16px !important;
 }
 
@@ -782,7 +782,7 @@ img {
   margin-bottom: 80px !important;
 }
 
-.pb-sm {
+.pb-sm, .youme__texts {
   padding-bottom: 16px !important;
 }
 
@@ -790,7 +790,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .stores, .support__header, .support__container {
+.content-width, .youme, .stores, .support__header, .support__container {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -805,7 +805,7 @@ img {
   color: #535353;
 }
 
-.flex, .stores__inner, .support__container {
+.flex, .youme__inner, .stores__inner, .support__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -813,6 +813,29 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.gainsboro {
+  color: gainsboro;
+}
+
+.youme__inner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  background-color: whitesmoke;
+}
+
+.youme__img {
+  height: 300px;
+}
+
+.youme__img > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .stores__btn {
@@ -873,7 +896,7 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-  .flex, .stores__inner, .support__container {
+  .flex, .youme__inner, .stores__inner, .support__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -898,6 +921,10 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .support__item {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
+  }
+  .youme__texts, .youme__img {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
   }
 }
 

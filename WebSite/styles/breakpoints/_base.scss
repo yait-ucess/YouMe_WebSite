@@ -59,6 +59,39 @@ img {
   flex-direction: column;
 }
 
+.gainsboro {
+  color: gainsboro;
+}
+.youme {
+  @extend .content-width;
+
+  &__inner {
+    @extend .flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: whitesmoke;
+  }
+
+  &__sub {
+    @extend .mb-sm;
+  }
+
+  &__img {
+    height: 300px;
+    @extend .mb-sm;
+
+    & > img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__texts {
+    @extend .pb-sm;
+  }
+}
+
 .stores {
   @extend .content-width;
 

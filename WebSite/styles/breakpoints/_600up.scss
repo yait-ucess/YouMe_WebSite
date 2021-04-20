@@ -29,3 +29,10 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     flex-basis: 49%;
   }
 }
+
+.youme {
+  &__texts,
+  &__img {
+    flex-basis: 47%;
+  }
+}
