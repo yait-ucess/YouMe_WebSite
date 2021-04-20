@@ -45,3 +45,14 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     padding-left: 35px;
   }
 }
+
+.footer {
+  & .logo {
+    justify-content: flex-start;
+  }
+
+  &__li {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}

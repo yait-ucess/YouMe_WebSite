@@ -164,3 +164,56 @@ img {
     }
   }
 }
+
+.logo {
+  font-size: 42px;
+  display: flex;
+
+  &__img {
+    width: 0.7em;
+  }
+
+  &__you {
+    color: gainsboro;
+  }
+}
+
+.footer {
+  padding: 60px 0;
+  @extend .content-width;
+
+  &__nav {
+    @extend .flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__ul {
+    @extend .flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__li {
+    padding: 0;
+    margin: 10px;
+
+    & > a {
+      color: $cSubTitle;
+      text-decoration: none;
+    }
+  }
+
+  & .logo {
+    @extend .mb-sm;
+    font-size: 38px;
+    justify-content: center;
+  }
+
+  &__copyright {
+    @extend .mb-sm;
+    margin-top: 40px;
+  }
+}
