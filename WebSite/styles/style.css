@@ -948,6 +948,12 @@ img {
   margin-top: 40px;
 }
 
+.footer .fa-cookie {
+  color: #dcdcdc;
+  padding-top: 7px;
+  margin-right: 5px;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
