@@ -59,6 +59,19 @@ img {
   flex-direction: column;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
 .gainsboro {
   color: gainsboro;
 }
@@ -70,6 +83,8 @@ img {
     justify-content: space-between;
     padding: 15px;
     background-color: whitesmoke;
+    position: relative;
+    z-index: 0;
   }
 
   &__sub {
