@@ -920,7 +920,7 @@ img {
   font-size: 25px;
 }
 
-.mb-sm, .youme__sub, .youme__img, .stores__title, .support__title, .footer .logo, .footer__copyright {
+.mb-sm, .header .logo, .youme__sub, .youme__img, .stores__title, .support__title, .footer .logo, .footer__copyright {
   margin-bottom: 16px !important;
 }
 
@@ -951,7 +951,7 @@ img {
   color: #535353;
 }
 
-.flex, .youme__inner, .stores__inner, .support__container, .footer__nav, .footer__ul {
+.flex, .header__nav, .youme__inner, .stores__inner, .support__container, .footer__nav, .footer__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -983,6 +983,42 @@ img {
 
 .header__nav {
   display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.header__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header__li {
+  margin-left: 20px;
+}
+
+.header__li > a {
+  color: black;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+.header .logo {
+  font-size: 38px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__inner {
@@ -1108,7 +1144,7 @@ img {
 
 .footer__li > a {
   color: #535353;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .footer .logo {
@@ -1142,7 +1178,7 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-  .flex, .youme__inner, .stores__inner, .support__container, .footer__nav, .footer__ul {
+  .flex, .header__nav, .youme__inner, .stores__inner, .support__container, .footer__nav, .footer__ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
