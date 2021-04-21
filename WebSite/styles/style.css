@@ -899,10 +899,6 @@ img {
   display: flex;
 }
 
-.logo__img {
-  width: 0.7em;
-}
-
 .logo__you {
   color: gainsboro;
 }
