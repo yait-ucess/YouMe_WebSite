@@ -7,6 +7,18 @@ $cMenuOpen: $cBlack;
     top: 60px;
     width: 300px;
 
+    & .logo {
+        padding: 0 40px;
+        margin-left: 25px;
+        font-size: 38px;
+
+        .fa-cookie {
+            color: $cGainsboro;
+            padding-top: 7px;
+            margin-right: 5px;
+          }
+    }
+
     &__btn {
         background-color: unset;
         border: none;
@@ -37,6 +49,7 @@ $cMenuOpen: $cBlack;
         visibility: hidden;
         transition: opacity 1s;
         cursor: pointer;
+        z-index: 200;
     }
     &__main {
         padding: 0;
@@ -50,12 +63,19 @@ $cMenuOpen: $cBlack;
         padding: 0 40px;
         transition: transform 0.3s, opacity 0.2s;
         opacity: 0;
+
+        & > a {
+            &:hover {
+                color: gainsboro !important;
+            }
+        }
     }
     &__link {
         display: block;
         margin-top: 30px;
         color: $cBlack;
-        text-decoration: none;
+        text-decoration: none !important;
+        text-align: center;
     }
 }
 
