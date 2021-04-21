@@ -936,7 +936,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .youme, .stores, .support__header, .support__container, .footer {
+.content-width, .header__inner, .youme, .stores, .support__header, .support__container, .footer {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -961,6 +961,10 @@ img {
           flex-direction: column;
 }
 
+#content {
+  padding-top: 100px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -975,6 +979,22 @@ img {
       -ms-flex-align: center;
           align-items: center;
   z-index: 100;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .gainsboro {
@@ -1214,6 +1234,12 @@ Stylesheet: 960px以上のモニタで適用
   }
   .youme__description {
     margin-bottom: 40px;
+  }
+  .header__nav {
+    display: block;
+  }
+  .mobile-menu__btn {
+    display: none;
   }
 }
 

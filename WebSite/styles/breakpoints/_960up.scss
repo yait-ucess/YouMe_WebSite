@@ -47,3 +47,15 @@ Stylesheet: 960px以上のモニタで適用
     margin-bottom: 40px;
   }
 }
+
+.header {
+  &__nav {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  &__btn {
+    display: none;
+  }
+}
