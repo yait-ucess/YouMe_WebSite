@@ -247,6 +247,7 @@
 
 .hero {
   overflow: hidden;
+  padding-top: 100px;
 }
 
 .hero__title {
@@ -938,11 +939,11 @@ img {
   font-size: 25px;
 }
 
-.mb-sm, .header .logo, .youme__sub, .youme__img, .stores__title, .support__title, .footer .logo, .footer__copyright {
+.mb-sm, .youme__sub, .youme__img, .stores__title, .support__title, .footer .logo, .footer__copyright {
   margin-bottom: 16px !important;
 }
 
-.mb-lg {
+.mb-lg, .youme {
   margin-bottom: 80px !important;
 }
 
@@ -950,7 +951,7 @@ img {
   padding-bottom: 16px !important;
 }
 
-.pb-lg, .stores__inner, .support__container {
+.pb-lg, .hero, .stores__inner, .support__container {
   padding-bottom: 80px !important;
 }
 
@@ -978,10 +979,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-#content {
-  padding-top: 100px;
 }
 
 #container {
@@ -1040,7 +1037,7 @@ img {
 }
 
 .header__li {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .header__li > a {
@@ -1054,6 +1051,10 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.header .logo > a {
+  text-decoration: none !important;
 }
 
 .header__inner {
@@ -1290,10 +1291,10 @@ Stylesheet: 960px以上のモニタで適用
   .font-lg, .main-title {
     font-size: 36px;
   }
-  .mb-lg {
+  .mb-lg, .youme {
     margin-bottom: 150px !important;
   }
-  .pb-lg, .stores__inner, .support__container {
+  .pb-lg, .hero, .stores__inner, .support__container {
     padding-bottom: 150px !important;
   }
   .support__item {
