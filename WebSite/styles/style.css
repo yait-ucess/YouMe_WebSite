@@ -996,6 +996,10 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
+.favicon {
+  color: #dcdcdc;
+}
+
 body {
   font-family: 'Kameron', 'Noto Sans JP', sans-serif;
 }
