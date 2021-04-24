@@ -1230,6 +1230,7 @@ img {
   text-align: center;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin-top: 40px;
 }
 
 .support__img {
