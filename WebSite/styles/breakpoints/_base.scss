@@ -4,10 +4,6 @@ Stylesheet: ベーススタイル
 
 ******************************************************************/
 
-.favicon {
-  color: $cGainsboro;
-}
-
 body {
   font-family: 'Kameron', 'Noto Sans JP', sans-serif;
 }
@@ -137,10 +133,29 @@ img {
     margin-right: 5px;
   }
 }
-
 .gainsboro {
   color: gainsboro;
 }
+
+.feeling {
+  @extend .content-width;
+  @extend .mb-lg;
+
+  p {
+    white-space: normal;
+    margin-bottom: 45px;
+  }
+
+  &__inner {
+    margin-top: 150px;
+    margin-bottom: 300px;
+  }
+  
+  &__title {
+    margin-bottom: 60px;
+  }
+}
+
 .youme {
   @extend .content-width;
   @extend .mb-lg;
@@ -194,6 +209,7 @@ img {
   &__btn {
     text-align: center;
     flex-basis: 100%;
+    margin-top: 20px;
   }
 }
 

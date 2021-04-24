@@ -24,13 +24,9 @@ Stylesheet: 960px以上のモニタで適用
   padding-bottom: 150px !important;
 }
 
-.support {
-  &__item {
-    flex-basis: 25%;
-  }
-
-  &__img {
-    height: 335px;
+.feeling {
+  p {
+    white-space: pre-line;
   }
 }
 

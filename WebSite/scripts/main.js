@@ -1,1 +1,78 @@
-document.addEventListener("DOMContentLoaded",function(){new Main});class Main{constructor(){this.header=document.querySelector(".header"),this._observer=[],this._init()}set observers(e){this._observer.push(e)}get observers(){return this._observer}_init(){new MobileMenu,this.hero=new HeroSlider(".swiper-container"),Pace.on("done",this._paceDone.bind(this))}_paceDone(){this._scrollInit()}_inviewAnimation(e,i){i?e.classList.add("inview"):e.classList.remove("inview")}_navAnimation(e,i){i?this.header.classList.remove("triggered"):this.header.classList.add("triggered")}_textAnimation(e,i){if(i){new TweenTextAnimation(e).animate()}}_toggleSlideAnimation(e,i){i?this.hero.start():this.hero.stop()}_destroyObservers(){this.observers.forEach(e=>{e.destroy()})}destroy(){this._destroyObservers()}_scrollInit(){this.observers=new ScrollObserver(".nav-trigger",this._navAnimation.bind(this),{once:!1}),this.observers=new ScrollObserver(".cover-slide",this._inviewAnimation),this.observers=new ScrollObserver(".appear",this._inviewAnimation),this.observers=new ScrollObserver(".tween-animate-title",this._textAnimation),this.observers=new ScrollObserver(".swiper-container",this._toggleSlideAnimation.bind(this),{once:!1})}}
+document.addEventListener('DOMContentLoaded', function() {
+  const main = new Main();
+});
+
+class Main {
+  constructor() {
+    this.header = document.querySelector('.header');
+    this._observer = [];
+    this._init();
+  }
+
+  set observers(val) {
+    this._observer.push(val);
+  }
+
+  get observers() {
+    return this._observer;
+  }
+
+  _init() {
+    new MobileMenu();
+    this.hero = new HeroSlider('.swiper-container');
+    Pace.on('done', this._paceDone.bind(this));
+  }
+
+  _paceDone() {
+    this._scrollInit();
+  }
+
+  _inviewAnimation(el, inview) {
+    if(inview) {
+      el.classList.add('inview');
+    } else {
+      el.classList.remove('inview');
+    }
+  }
+
+  _navAnimation(el, inview) {
+    if(inview) {
+      this.header.classList.remove('triggered');
+    } else {
+      this.header.classList.add('triggered');
+    }
+  }
+
+  _textAnimation(el, inview) {
+    if(inview) {
+        const ta = new TweenTextAnimation(el);
+        ta.animate();
+    }
+  }
+
+  _toggleSlideAnimation(el, inview) {
+    if(inview) {
+      this.hero.start();
+    } else {
+      this.hero.stop();
+    }
+  }
+
+  _destroyObservers() {
+    this.observers.forEach(ob => {
+      ob.destroy();
+    });
+  }
+
+  destroy() {
+    this._destroyObservers();
+  }
+
+  _scrollInit() {
+    this.observers = new ScrollObserver('.nav-trigger', this._navAnimation.bind(this), {once: false});
+    this.observers = new ScrollObserver('.cover-slide', this._inviewAnimation);
+    this.observers = new ScrollObserver('.appear', this._inviewAnimation);
+    this.observers = new ScrollObserver('.tween-animate-title', this._textAnimation);
+    this.observers = new ScrollObserver('.swiper-container', this._toggleSlideAnimation.bind(this), {once: false});
+  }
+}

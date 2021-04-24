@@ -20,8 +20,8 @@
 }
 
 .appear .item {
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  -webkit-transition: all 4.2s;
+  transition: all 4.2s;
   opacity: 0;
 }
 
@@ -996,10 +996,6 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
-.favicon {
-  color: #dcdcdc;
-}
-
 body {
   font-family: 'Kameron', 'Noto Sans JP', sans-serif;
 }
@@ -1029,7 +1025,7 @@ img {
   margin-bottom: 16px !important;
 }
 
-.mb-lg, .youme {
+.mb-lg, .feeling, .youme {
   margin-bottom: 80px !important;
 }
 
@@ -1041,7 +1037,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .header__inner, .youme, .stores, .support__header, .support__container, .footer {
+.content-width, .header__inner, .feeling, .youme, .stores, .support__header, .support__container, .footer {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -1165,6 +1161,20 @@ img {
   color: gainsboro;
 }
 
+.feeling p {
+  white-space: normal;
+  margin-bottom: 45px;
+}
+
+.feeling__inner {
+  margin-top: 150px;
+  margin-bottom: 300px;
+}
+
+.feeling__title {
+  margin-bottom: 60px;
+}
+
 .youme__inner {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1194,6 +1204,7 @@ img {
   text-align: center;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin-top: 20px;
 }
 
 .support__inner {
@@ -1292,12 +1303,17 @@ img {
   margin-right: 5px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 410px) {
   /******************************************************************
 
-Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+Stylesheet: 410px以上(スマホの縦向き)のモニタで適用
 
 ******************************************************************/
+  .feeling p {
+    white-space: pre-line;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 @media (min-width: 600px) {
@@ -1377,18 +1393,14 @@ Stylesheet: 960px以上のモニタで適用
   .font-lg, .main-title {
     font-size: 36px;
   }
-  .mb-lg, .youme {
+  .mb-lg, .feeling, .youme {
     margin-bottom: 150px !important;
   }
   .pb-lg, .hero, .stores__inner, .support__container {
     padding-bottom: 150px !important;
   }
-  .support__item {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
-  }
-  .support__img {
-    height: 335px;
+  .feeling p {
+    white-space: pre-line;
   }
   .youme__img {
     height: 400px;
@@ -1415,10 +1427,6 @@ Stylesheet: 1280px以上のモニタで適用
 ******************************************************************/
   .youme__inner {
     padding: 50px 150px;
-  }
-  .support__item {
-    -ms-flex-preferred-size: 23%;
-        flex-basis: 23%;
   }
 }
 
